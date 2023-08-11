@@ -8,9 +8,8 @@ import CollegeChanceCalculator from "./Component/CollegeChanceCalculator.js";
 import ReactGA from "react-ga";
 
 const App = () => {
-  ReactGA.initialize("UA-202589732-2");
-
   useEffect(() => {
+    ReactGA.initialize("UA-202589732-2");
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
