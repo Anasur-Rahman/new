@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Card } from "react-bootstrap";
 import "../css/CollegeChanceCalculator.css";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 const CollegeChanceCalculator = ({ studentData }) => {
   const [roll, setRoll] = useState("");

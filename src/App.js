@@ -5,11 +5,11 @@ import StudentTable from "./Component/StudentTable.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/index.css";
 import CollegeChanceCalculator from "./Component/CollegeChanceCalculator.js";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 const App = () => {
   useEffect(() => {
-    ReactGA.initialize("UA-202589732-2");
+    ReactGA.initialize("G-MTGSQYRR9G");
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
