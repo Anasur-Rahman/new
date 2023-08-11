@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/index.css";
 import CollegeChanceCalculator from "./Component/CollegeChanceCalculator.js";
 
-
+const App = () => {
   return (
     <div className="main">
       <div className="header-text">
