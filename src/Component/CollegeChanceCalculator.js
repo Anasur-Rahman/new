@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Card } from "react-bootstrap";
 import "../css/CollegeChanceCalculator.css";
-import ReactGA from "react-ga4";
 
 const CollegeChanceCalculator = ({ studentData }) => {
   const [roll, setRoll] = useState("");
@@ -16,12 +15,6 @@ const CollegeChanceCalculator = ({ studentData }) => {
   };
 
   const calculateCollegeChance = () => {
-    ReactGA.event({
-      category: "User Interaction",
-      action: "Button Clicked",
-      label: "Calculate Chance",
-    });
-
     const parsedRoll = parseInt(roll);
 
     // Convert student rolls to integers for comparison
