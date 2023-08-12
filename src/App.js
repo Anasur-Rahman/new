@@ -22,12 +22,12 @@ const App = () => {
       </a>
       <StudentTable data={data} itemsPerPage={100} />
       <p id="bottom">
-        It's not an official percentage.Your chance to get into a above college
-        is estimated based on your total mark and your position in CTG Board.It
-        includes the total number of seats having by the College.This app also
-        considers the student who may migrate to other districts .This chance
-        may vary as Total Marks of a student can change after Recheck
-        Result.This Chance is not 100% Accurate.
+        It's not an official percentage. Your chance to get into the above
+        college is estimated based on your total marks and your position on the
+        CTG Board. It includes the total number of seats the colleges have. This
+        app also considers students who may migrate to other districts. This
+        chance may vary as the total marks of a student can change after
+        rechecking the result. This chance is not 100% accurate.
       </p>
     </div>
   );

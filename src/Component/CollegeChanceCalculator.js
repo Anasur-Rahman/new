@@ -29,7 +29,7 @@ const CollegeChanceCalculator = ({ studentData }) => {
 
     let chances = {};
 
-    if (student.total_number > 1218 && student.gpa === "5.00") {
+    if (student.total_number > 1216 && student.gpa === "5.00") {
       chances = {
         "Chittagong College": 100,
         "Govt. Mohsin College": 100,
@@ -37,13 +37,17 @@ const CollegeChanceCalculator = ({ studentData }) => {
         "Bakalia Govt. College": 100,
         "Chittagong Government Model School and College ": 100,
       };
-    } else if (
-      student.total_number < 1218 &&
-      student.total_number > 1214 &&
-      student.gpa === "5.00"
-    ) {
+    } else if (student.total_number === 1215 && student.gpa === "5.00") {
       chances = {
-        "Chittagong College": 97,
+        "Chittagong College": 98.1,
+        "Govt. Mohsin College": 100,
+        "Govt. City College": 100,
+        "Bakalia Govt. College": 100,
+        "Chittagong Government Model School and College ": 100,
+      };
+    } else if (student.total_number === 1216 && student.gpa === "5.00") {
+      chances = {
+        "Chittagong College": 99.7,
         "Govt. Mohsin College": 100,
         "Govt. City College": 100,
         "Bakalia Govt. College": 100,
@@ -75,32 +79,32 @@ const CollegeChanceCalculator = ({ studentData }) => {
       };
     } else if (
       student.total_number < 1208 &&
-      student.total_number > 1202 &&
+      student.total_number > 1204 &&
       student.gpa === "5.00"
     ) {
       chances = {
-        "Chittagong College": 82,
+        "Chittagong College": 79,
         "Govt. Mohsin College": 100,
         "Govt. City College": 100,
         "Bakalia Govt. College": 100,
         "Chittagong Government Model School and College ": 100,
       };
     } else if (
-      student.total_number < 1201 &&
+      student.total_number < 1200 &&
       student.total_number > 1188 &&
       student.gpa === "5.00"
     ) {
       chances = {
         "Chittagong College": 0,
-        "Govt. Mohsin College": 87,
+        "Govt. Mohsin College": 91.2,
         "Govt. City College": 100,
         "Bakalia Govt. College": 100,
         "Chittagong Government Model School and College ": 100,
       };
-    } else if (student.total_number === 1202 && student.gpa === "5.00") {
+    } else if (student.total_number === 1200 && student.gpa === "5.00") {
       chances = {
         "Chittagong College": 0,
-        "Govt. Mohsin College": 100,
+        "Govt. Mohsin College": 96,
         "Govt. City College": 100,
         "Bakalia Govt. College": 100,
         "Chittagong Government Model School and College ": 100,
@@ -108,7 +112,15 @@ const CollegeChanceCalculator = ({ studentData }) => {
     } else if (student.total_number === 1201 && student.gpa === "5.00") {
       chances = {
         "Chittagong College": 0,
-        "Govt. Mohsin College": 99,
+        "Govt. Mohsin College": 97.2,
+        "Govt. City College": 100,
+        "Bakalia Govt. College": 100,
+        "Chittagong Government Model School and College ": 100,
+      };
+    } else if (student.total_number === 1202 && student.gpa === "5.00") {
+      chances = {
+        "Chittagong College": 0,
+        "Govt. Mohsin College": 98,
         "Govt. City College": 100,
         "Bakalia Govt. College": 100,
         "Chittagong Government Model School and College ": 100,
@@ -116,82 +128,105 @@ const CollegeChanceCalculator = ({ studentData }) => {
     } else if (student.total_number === 1188 && student.gpa === "5.00") {
       chances = {
         "Chittagong College": 0,
-        "Govt. Mohsin College": 91,
+        "Govt. Mohsin College": 86,
         "Govt. City College": 99,
         "Bakalia Govt. College": 100,
         "Chittagong Government Model School and College ": 100,
       };
     } else if (
       student.total_number < 1188 &&
-      student.total_number > 1176 &&
+      student.total_number > 1185 &&
       student.gpa === "5.00"
     ) {
       chances = {
         "Chittagong College": 0,
-        "Govt. Mohsin College": 84,
-        "Govt. City College": 92,
+        "Govt. Mohsin College": 0,
+        "Govt. City College": 98.1,
+        "Bakalia Govt. College": 100,
+        "Chittagong Government Model School and College ": 100,
+      };
+    } else if (student.total_number === 1185 && student.gpa === "5.00") {
+      chances = {
+        "Chittagong College": 0,
+        "Govt. Mohsin College": 0,
+        "Govt. City College": 97,
         "Bakalia Govt. College": 100,
         "Chittagong Government Model School and College ": 100,
       };
     } else if (
-      student.total_number < 1177 &&
+      student.total_number < 1185 &&
+      student.total_number > 1178 &&
+      student.gpa === "5.00"
+    ) {
+      chances = {
+        "Chittagong College": 0,
+        "Govt. Mohsin College": 0,
+        "Govt. City College": 81,
+        "Bakalia Govt. College": 100,
+        "Chittagong Government Model School and College ": 100,
+      };
+    } else if (student.total_number === 1178 && student.gpa === "5.00") {
+      chances = {
+        "Chittagong College": 0,
+        "Govt. Mohsin College": 0,
+        "Govt. City College": 0,
+        "Bakalia Govt. College": 98.3,
+        "Chittagong Government Model School and College ": 100,
+      };
+    } else if (
+      student.total_number < 1178 &&
+      student.total_number > 1172 &&
+      student.gpa === "5.00"
+    ) {
+      chances = {
+        "Chittagong College": 0,
+        "Govt. Mohsin College": 0,
+        "Govt. City College": 0,
+        "Bakalia Govt. College": 87.7,
+        "Chittagong Government Model School and College ": 99,
+      };
+    }
+
+    //start
+    else if (
+      student.total_number < 1173 &&
       student.total_number > 1169 &&
       student.gpa === "5.00"
     ) {
       chances = {
         "Chittagong College": 0,
         "Govt. Mohsin College": 0,
-        "Govt. City College": 94,
-        "Bakalia Govt. College": 98,
-        "Chittagong Government Model School and College ": 100,
-      };
-    } else if (student.total_number === 1169 && student.gpa === "5.00") {
-      chances = {
-        "Chittagong College": 0,
-        "Govt. Mohsin College": 0,
-        "Govt. City College": 61,
-        "Bakalia Govt. College": 83,
-        "Chittagong Government Model School and College ": 90,
+        "Govt. City College": 0,
+        "Bakalia Govt. College": 82,
+        "Chittagong Government Model School and College ": 93,
       };
     } else if (
-      student.total_number < 1169 &&
-      student.total_number > 1160 &&
+      student.total_number < 1170 &&
+      student.total_number > 1165 &&
       student.gpa === "5.00"
     ) {
       chances = {
         "Chittagong College": 0,
         "Govt. Mohsin College": 0,
         "Govt. City College": 0,
-        "Bakalia Govt. College": 78,
-        "Chittagong Government Model School and College ": 84,
+        "Bakalia Govt. College": 61,
+        "Chittagong Government Model School and College ": 87,
       };
     } else if (
-      student.total_number < 1161 &&
-      student.total_number > 1145 &&
+      student.total_number < 1166 &&
+      student.total_number > 1163 &&
       student.gpa === "5.00"
     ) {
       chances = {
         "Chittagong College": 0,
         "Govt. Mohsin College": 0,
         "Govt. City College": 0,
-        "Bakalia Govt. College": 37,
-        "Chittagong Government Model School and College ": 51,
+        "Bakalia Govt. College": 31,
+        "Chittagong Government Model School and College ": 37,
       };
     } else if (
-      student.total_number < 1146 &&
-      student.total_number > 1130 &&
-      student.gpa === "5.00"
-    ) {
-      chances = {
-        "Chittagong College": 0,
-        "Govt. Mohsin College": 0,
-        "Govt. City College": 0,
-        "Bakalia Govt. College": 24,
-        "Chittagong Government Model School and College ": 31,
-      };
-    } else if (
-      student.total_number < 1131 &&
-      student.total_number > 1120 &&
+      student.total_number < 1164 &&
+      student.total_number > 1159 &&
       student.gpa === "5.00"
     ) {
       chances = {
@@ -201,7 +236,19 @@ const CollegeChanceCalculator = ({ studentData }) => {
         "Bakalia Govt. College": 0,
         "Chittagong Government Model School and College ": 11,
       };
-    } else if (student.total_number < 1121) {
+    } else if (
+      student.total_number < 1160 &&
+      student.total_number > 1155 &&
+      student.gpa === "5.00"
+    ) {
+      chances = {
+        "Chittagong College": 0,
+        "Govt. Mohsin College": 0,
+        "Govt. City College": 0,
+        "Bakalia Govt. College": 0,
+        "Chittagong Government Model School and College ": 17,
+      };
+    } else if (student.total_number < 1156) {
       chances = {
         "Chittagong College": 0,
         "Govt. Mohsin College": 0,
@@ -210,7 +257,6 @@ const CollegeChanceCalculator = ({ studentData }) => {
         "Chittagong Government Model School and College ": 0,
       };
     }
-
     setChances(chances);
 
     setRoll(parsedRoll);
