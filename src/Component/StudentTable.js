@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import { Table, InputGroup, FormControl, Button } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState, useEffect } from "react";
+import { Table, InputGroup, FormControl, Button } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "../css/StudentTable.css";
 //import Navbar from '../Component/Navbar';
 
 const StudentTable = ({ data, itemsPerPage }) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
   const [filteredData, setFilteredData] = useState(data);
 
   useEffect(() => {
@@ -40,7 +40,7 @@ const StudentTable = ({ data, itemsPerPage }) => {
 
   return (
     <div className="container mt-4">
-      <h1 className='display-4'>Board STAND</h1>
+      <h1 className="display-4">Board STAND</h1>
       <InputGroup className="mb-3">
         <FormControl
           placeholder="Search by name or roll"
@@ -52,10 +52,12 @@ const StudentTable = ({ data, itemsPerPage }) => {
         <thead>
           <tr>
             <th>Name</th>
+
             <th>Roll</th>
-            <th>GPA</th>
+
             <th>Number</th>
             <th>Rank</th>
+            <th>GPA</th>
           </tr>
         </thead>
         <tbody>
@@ -63,9 +65,9 @@ const StudentTable = ({ data, itemsPerPage }) => {
             <tr key={index}>
               <td>{student.name}</td>
               <td>{student.roll}</td>
-              <td>{student.gpa}</td>
               <td>{student.total_number}</td>
               <td>{student.position}</td>
+              <td>{student.gpa}</td>
             </tr>
           ))}
         </tbody>
@@ -83,7 +85,7 @@ const StudentTable = ({ data, itemsPerPage }) => {
           variant="primary"
           disabled={currentPage === totalPages}
           onClick={handleNextPage}
-          className='mr-2'
+          className="mr-2"
         >
           Next
         </Button>
